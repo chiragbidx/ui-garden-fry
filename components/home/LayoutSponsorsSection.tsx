@@ -22,19 +22,19 @@ const sponsors: sponsorsProps[] = [
   },
   {
     icon: "Puzzle",
-    name: "Supabase",
+    name: "SendGrid",
   },
   {
-    icon: "Squirrel",
-    name: "Clerk",
+    icon: "Cloud",
+    name: "AWS SES",
   },
   {
-    icon: "Cookie",
-    name: "Resend",
+    icon: "Mail",
+    name: "Mailgun",
   },
   {
-    icon: "Drama",
-    name: "Sentry",
+    icon: "Zap",
+    name: "Zapier",
   },
 ];
 
@@ -42,7 +42,7 @@ export const LayoutSponsorsSection = () => {
   return (
     <section id="sponsors" className="max-w-[75%] mx-auto pb-24 sm:pb-32">
       <h2 className="text-lg md:text-xl text-center mb-6">
-        Built with trusted tools
+        Trusted by best-of-breed platforms
       </h2>
 
       <div className="relative overflow-hidden rounded-xl border border-border/60 bg-card/60 p-4">
