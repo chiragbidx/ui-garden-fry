@@ -8,40 +8,33 @@ export const LayoutFooterSection = () => {
       <div className="p-10 bg-card border border-secondary rounded-2xl">
         <div className="grid grid-cols-2 md:grid-cols-4 xl:grid-cols-6 gap-x-12 gap-y-8">
           <div className="col-span-full xl:col-span-2">
-            <Link href="#" className="flex font-bold items-center">
+            <Link href="/" className="flex font-bold items-center">
               <ChevronsDownIcon className="w-9 h-9 mr-2 bg-gradient-to-tr from-primary via-primary/70 to-primary rounded-lg border border-secondary" />
-
-              <h3 className="text-2xl">Panda</h3>
+              <h3 className="text-2xl">Mailvibe</h3>
             </Link>
+            <div className="text-muted-foreground text-sm mt-2">
+              Email marketing made effortless. Designed, built, and run by
+              <span className="ml-1 font-semibold text-foreground">Chirag Dodiya</span>.
+            </div>
           </div>
-
           <div className="flex flex-col gap-2">
             <h3 className="font-bold text-lg">Contact</h3>
             <div>
-              <Link href="mailto:hello@panda.dev" className="opacity-60 hover:opacity-100">
-                hello@panda.dev
+              <Link href="mailto:hi@chirag.co" className="opacity-60 hover:opacity-100">
+                hi@chirag.co
               </Link>
             </div>
-
             <div>
-              <Link href="#" className="opacity-60 hover:opacity-100">
-                Github
-              </Link>
+              <a href="https://github.com/" className="opacity-60 hover:opacity-100" rel="noopener" target="_blank">
+                GitHub
+              </a>
             </div>
-
             <div>
-              <Link href="https://x.com" className="opacity-60 hover:opacity-100">
-                Twitter
-              </Link>
-            </div>
-
-            <div>
-              <Link href="https://discord.com" className="opacity-60 hover:opacity-100">
-                Discord
-              </Link>
+              <a href="https://x.com" className="opacity-60 hover:opacity-100" rel="noopener" target="_blank">
+                X (Twitter)
+              </a>
             </div>
           </div>
-
           <div className="flex flex-col gap-2">
             <h3 className="font-bold text-lg">Product</h3>
             <div>
@@ -49,20 +42,17 @@ export const LayoutFooterSection = () => {
                 Features
               </Link>
             </div>
-
             <div>
               <Link href="#pricing" className="opacity-60 hover:opacity-100">
                 Pricing
               </Link>
             </div>
-
             <div>
               <Link href="#contact" className="opacity-60 hover:opacity-100">
                 Contact
               </Link>
             </div>
           </div>
-
           <div className="flex flex-col gap-2">
             <h3 className="font-bold text-lg">Help</h3>
             <div>
@@ -70,56 +60,47 @@ export const LayoutFooterSection = () => {
                 Contact Us
               </Link>
             </div>
-
             <div>
               <Link href="#faq" className="opacity-60 hover:opacity-100">
                 FAQ
               </Link>
             </div>
-
             <div>
-              <Link href="https://nextjs.org/docs" className="opacity-60 hover:opacity-100">
+              <Link href="#" className="opacity-60 hover:opacity-100">
                 Docs
               </Link>
             </div>
           </div>
-
           <div className="flex flex-col gap-2">
             <h3 className="font-bold text-lg">Socials</h3>
             <div>
-              <Link href="https://github.com" className="opacity-60 hover:opacity-100">
+              <a href="https://github.com/" className="opacity-60 hover:opacity-100" target="_blank" rel="noopener">
                 GitHub
-              </Link>
+              </a>
             </div>
-
             <div>
-              <Link href="https://discord.com" className="opacity-60 hover:opacity-100">
-                Discord
-              </Link>
-            </div>
-
-            <div>
-              <Link href="https://x.com" className="opacity-60 hover:opacity-100">
-                X
-              </Link>
+              <a href="https://x.com" className="opacity-60 hover:opacity-100" target="_blank" rel="noopener">
+                X (Twitter)
+              </a>
             </div>
           </div>
         </div>
-
         <Separator className="my-6" />
-        <section className="">
-          <h3 className="">
-            &copy; 2026 Panda SaaS App Builder Starter.
-            <Link
+        <section>
+          <h3>
+            &copy; {new Date().getFullYear()} Mailvibe. Lovingly crafted by
+            <a
               target="_blank"
-              href="https://nextjs.org"
+              href="mailto:hi@chirag.co"
               className="text-primary transition-all border-primary hover:border-b-2 ml-1"
+              rel="noopener"
             >
-              Built on Next.js
-            </Link>
+              Chirag Dodiya
+            </a>
+            . Built on Next.js.
           </h3>
         </section>
       </div>
     </footer>
   );
-};
+}
