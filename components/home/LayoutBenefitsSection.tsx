@@ -10,28 +10,28 @@ interface BenefitsProps {
 
 const benefitList: BenefitsProps[] = [
   {
-    icon: "Blocks",
-    title: "Ship With Confidence",
+    icon: "MailCheck",
+    title: "99.3% Deliverability",
     description:
-      "Start from proven architecture and avoid redoing auth, layout, and deployment setup.",
-  },
-  {
-    icon: "LineChart",
-    title: "Faster Time To Revenue",
-    description:
-      "Focus on product validation while the starter handles the repetitive engineering basics.",
-  },
-  {
-    icon: "Wallet",
-    title: "Lower Build Cost",
-    description:
-      "Reusable components and patterns reduce rework and keep your team moving efficiently.",
+      "Best-in-class sending infrastructure means your emails land in more inboxes.",
   },
   {
     icon: "Sparkle",
-    title: "Cleaner UX By Default",
+    title: "No Hassle Campaigns",
     description:
-      "Responsive sections, dark mode, and polished UI primitives create a premium first impression.",
+      "Fast, visual editor—get a professional campaign out the door in minutes, not hours.",
+  },
+  {
+    icon: "Activity",
+    title: "Analytics that Matter",
+    description:
+      "Real-time, actionable campaign data without the noise. Know exactly what’s working.",
+  },
+  {
+    icon: "Bot",
+    title: "AI Writing Assistant",
+    description:
+      "Generate high-converting subject lines, experiments, and content ideas with a click.",
   },
 ];
 
@@ -40,14 +40,14 @@ export const LayoutBenefitsSection = () => {
     <section id="benefits" className="container py-24 sm:py-32">
       <div className="grid lg:grid-cols-2 place-items-center lg:gap-24">
         <div>
-          <h2 className="text-lg text-primary mb-2 tracking-wider">Why Panda</h2>
+          <h2 className="text-lg text-primary mb-2 tracking-wider">Why Mailvibe</h2>
 
           <h2 className="text-3xl md:text-4xl font-bold mb-4">
-            A practical SaaS app builder starter
+            Get more from every campaign
           </h2>
           <p className="text-xl text-muted-foreground mb-8">
-            Built for teams that want production-ready foundations with room to
-            customize, not a rigid template you outgrow in a week.
+            Mailvibe customers grow lists, save time, and see measurable results—without
+            the learning curve or maintenance headaches of legacy platforms.
           </p>
         </div>
 
