@@ -36,7 +36,7 @@ export default async function DashboardLayout({
 
   const fullName = `${user.firstName} ${user.lastName}`.trim();
   const initials =
-    `${user.firstName[0] ?? ""}${user.lastName[0] ?? ""}`.toUpperCase() || "U";
+    `${user.firstName[0] ?? ""}${user.lastName[0] ?? ""}`.toUpperCase() || "M";
 
   return (
     <div className="min-h-screen bg-background">
@@ -46,9 +46,9 @@ export default async function DashboardLayout({
           <div className="p-5">
             <div className="flex items-center gap-2.5">
               <div className="grid size-8 place-items-center rounded-lg bg-foreground text-background text-sm font-bold shadow-sm">
-                P
+                M
               </div>
-              <span className="font-semibold tracking-tight">Panda Admin</span>
+              <span className="font-semibold tracking-tight">Mailvibe Dashboard</span>
             </div>
           </div>
 
