@@ -13,8 +13,7 @@ import { LayoutTestimonialSection } from "../components/home/LayoutTestimonialSe
 import { Navbar as LayoutNavbar } from "@/components/layout/navbar";
 
 export default function Home() {
-  // Simple toggles so agents/users can hide sections without touching JSX.
-  // Use ONLY_SECTIONS (comma list) to whitelist, or HIDE_SECTIONS to blacklist.
+  // Simple toggles for hiding/whitelisting sections (runtime-driven)
   const only = (process.env.ONLY_SECTIONS ?? "")
     .split(",")
     .map((s) => s.trim().toLowerCase())
@@ -50,7 +49,6 @@ export default function Home() {
         {visibleSections.map(([, node]) => node)}
       </main>
 
-      {/* lightweight animations defined locally to avoid tailwind config changes */}
       <style>{`
         @keyframes float {
           0% { transform: translateY(0px); }
