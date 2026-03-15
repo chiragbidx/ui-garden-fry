@@ -17,7 +17,7 @@ enum PopularPlan {
 interface PlanProps {
   title: string;
   popular: PopularPlan;
-  price: number;
+  price: string;
   description: string;
   buttonText: string;
   benefitList: string[];
@@ -27,46 +27,45 @@ const plans: PlanProps[] = [
   {
     title: "Starter",
     popular: 0,
-    price: 0,
+    price: "$0",
     description:
-      "Ideal for prototypes and small internal tools.",
-    buttonText: "Start for free",
+      "For testing & solo creators: core features, 500 contacts, unlimited sends.",
+    buttonText: "Try free",
     benefitList: [
-      "Up to 3 teammates",
-      "Basic auth patterns",
-      "Core landing sections",
-      "Community support",
-      "Deploy-ready setup",
+      "500 contacts",
+      "Unlimited email campaigns",
+      "Basic analytics",
+      "Mailvibe watermark",
     ],
   },
   {
-    title: "Growth",
+    title: "Pro",
     popular: 1,
-    price: 49,
+    price: "$19",
     description:
-      "Best for product teams shipping customer-facing SaaS.",
-    buttonText: "Start trial",
+      "Best for growing brands: 2,500 contacts, advanced analytics, and AI tools.",
+    buttonText: "Start Pro",
     benefitList: [
-      "Unlimited teammates",
-      "Advanced section set",
-      "Billing-ready models",
-      "Priority support",
-      "Team workflows",
+      "2,500 contacts",
+      "AI content assistant",
+      "Premium templates",
+      "No Mailvibe branding",
+      "Priority email support",
     ],
   },
   {
-    title: "Enterprise",
+    title: "Team",
     popular: 0,
-    price: 199,
+    price: "$59",
     description:
-      "For teams requiring compliance, support SLAs, and custom rollout.",
-    buttonText: "Contact sales",
+      "Organizations: APIs, subaccounts, team analytics, and personal onboarding.",
+    buttonText: "Upgrade to Team",
     benefitList: [
-      "Security review support",
-      "SSO/SAML integration path",
-      "Dedicated onboarding",
-      "Phone and email support",
-      "Architecture advisory",
+      "10,000 contacts",
+      "Multiple users (subaccounts)",
+      "Integrations & API access",
+      "Team analytics",
+      "White-glove onboarding",
     ],
   },
 ];
@@ -79,11 +78,11 @@ export const LayoutPricingSection = () => {
       </h2>
 
       <h2 className="text-3xl md:text-4xl text-center font-bold mb-4">
-        Pricing for every stage
+        Simple, fair pricing for every stage
       </h2>
 
       <h3 className="md:w-1/2 mx-auto text-xl text-center text-muted-foreground pb-14">
-        Start lean, then scale to enterprise-grade workflows as your product grows.
+        No contracts. No surprises. Every paid plan includes full support and unlimited campaigns.
       </h3>
 
       <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 lg:gap-4">
@@ -105,8 +104,8 @@ export const LayoutPricingSection = () => {
                 </CardDescription>
 
                 <div>
-                  <span className="text-3xl font-bold">${price}</span>
-                  <span className="text-muted-foreground"> /month</span>
+                  <span className="text-3xl font-bold">{price}</span>
+                  <span className="text-muted-foreground"> /mo</span>
                 </div>
               </CardHeader>
 
@@ -127,14 +126,19 @@ export const LayoutPricingSection = () => {
                     popular === PopularPlan?.YES ? "default" : "secondary"
                   }
                   className="w-full"
+                  asChild
                 >
-                  {buttonText}
+                  <a href="/auth#signup">{buttonText}</a>
                 </Button>
               </CardFooter>
             </Card>
           )
         )}
       </div>
+      <p className="text-muted-foreground text-center mt-8">
+        Need a custom plan or want to discuss large-volume pricing?{" "}
+        <a className="underline font-semibold" href="mailto:hi@chirag.co">Contact Chirag</a>
+      </p>
     </section>
   );
 };
