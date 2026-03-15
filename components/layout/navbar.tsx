@@ -33,10 +33,9 @@ interface FeatureProps {
   description: string;
 }
 
-// Landing page logo config.
-// Update these values to customize the navbar logo name and icon styling.
+// Navbar logo config for Mailvibe
 const LANDING_LOGO = {
-  name: "Panda",
+  name: "Mailvibe",
   iconClassName:
     "bg-gradient-to-tr border-secondary from-primary via-primary/70 to-primary rounded-lg w-9 h-9 mr-2 border text-white",
 };
@@ -48,7 +47,7 @@ const routeList: RouteProps[] = [
   },
   {
     href: "/#team",
-    label: "Team",
+    label: "Founder",
   },
   {
     href: "/#contact",
@@ -62,16 +61,16 @@ const routeList: RouteProps[] = [
 
 const featureList: FeatureProps[] = [
   {
-    title: "Auth, Billing, Teams",
-    description: "Production-ready flows for sign-in, subscriptions, and organizations.",
+    title: "Send Campaigns Fast",
+    description: "Drag-and-drop builder, subscriber management, analytics.",
   },
   {
-    title: "UI + Design System",
-    description: "Shadcn-based components with consistent theming and dark mode support.",
+    title: "Save Time with AI",
+    description: "Smart subject suggestions and high-converting templates.",
   },
   {
-    title: "Deploy Fast",
-    description: "Sane defaults for Next.js, TypeScript, and Vercel-first deployment.",
+    title: "Scale Affordably",
+    description: "Free plan to start, flexible upgrades — no contract.",
   },
 ];
 
@@ -135,7 +134,7 @@ export const Navbar = () => {
                   asChild
                   className="justify-start text-base"
                 >
-                  <Link href="/auth#signup">Sign up</Link>
+                  <Link href="/auth#signup">Start Free Trial</Link>
                 </Button>
               </div>
             </div>
@@ -159,8 +158,8 @@ export const Navbar = () => {
             <NavigationMenuContent>
               <div className="grid w-[600px] grid-cols-2 gap-5 p-4">
                 <Image
-                  src="/demo-img.jpg"
-                  alt="Panda preview"
+                  src="/hero-image-light.jpeg"
+                  alt="Mailvibe preview"
                   className="h-full w-full rounded-md object-cover"
                   width={600}
                   height={600}
@@ -201,14 +200,14 @@ export const Navbar = () => {
           <Link href="/auth#signin">Sign in</Link>
         </Button>
         <Button asChild size="sm">
-          <Link href="/auth#signup">Sign up</Link>
+          <Link href="/auth#signup">Start Free Trial</Link>
         </Button>
         <ThemeToggle mode="inline" className="w-auto justify-center" />
 
         <Button asChild size="sm" variant="ghost" aria-label="View on GitHub">
           <Link
             aria-label="View on GitHub"
-            href="https://nextjs.org/docs"
+            href="https://github.com/"
             target="_blank"
           >
             <Github className="size-5" />
@@ -217,4 +216,4 @@ export const Navbar = () => {
       </div>
     </header>
   );
-};
+}
