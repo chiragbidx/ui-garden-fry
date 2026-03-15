@@ -17,25 +17,25 @@ interface ServiceProps {
 }
 const serviceList: ServiceProps[] = [
   {
-    title: "Authentication Foundation",
+    title: "Inbox-Focused Sending",
     description:
-      "Ready-to-extend auth scaffolding for email, OAuth, and organization-based access.",
-    pro: 0,
+      "SendGrid, Mailgun, and AWS SES-backed delivery. Built-in sender authentication & best-practice compliance.",
+    pro: 1,
   },
   {
-    title: "Billing-Ready Structure",
+    title: "AI-Powered Campaign Copy",
     description:
-      "Plan models and upgrade flow patterns prepared for Stripe or your payment provider.",
+      "Get instant subject line, preview text, and content suggestions (GPT-powered).",
+    pro: 1,
+  },
+  {
+    title: "Contact Management & Growth",
+    description: "Easy imports, tags, segments, and opt-in forms put growth on autopilot.",
     pro: 0,
   },
   {
-    title: "Developer Experience",
-    description: "TypeScript, linting, and component primitives configured for team velocity.",
-    pro: 0,
-  },
-  {
-    title: "Production Hardening",
-    description: "Security-minded defaults, reusable UI states, and maintainable section architecture.",
+    title: "Visual Editor & Templates",
+    description: "Build beautiful, responsive campaigns with our drag-and-drop editor and pro template library.",
     pro: 1,
   },
 ];
@@ -48,14 +48,11 @@ export const LayoutServicesSection = () => {
       </h2>
 
       <h2 className="text-3xl md:text-4xl text-center font-bold mb-4">
-        Core starter capabilities
+        All you need for world-class email
       </h2>
       <h3 className="md:w-1/2 mx-auto text-xl text-center text-muted-foreground mb-8">
-        A pragmatic baseline for SaaS products that need to move quickly
-        without sacrificing quality.
+        Mailvibe covers every part of your lifecycle—creation, delivery, and engagement—without the bloat.
       </h3>
-      <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4"></div>
-
       <div className="grid sm:grid-cols-2 lg:grid-cols-2 gap-4 w-full lg:w-[60%] mx-auto">
         {serviceList.map(({ title, description, pro }) => (
           <Card
@@ -78,4 +75,4 @@ export const LayoutServicesSection = () => {
       </div>
     </section>
   );
-};
+}
