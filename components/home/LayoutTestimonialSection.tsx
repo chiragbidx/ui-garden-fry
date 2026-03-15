@@ -27,52 +27,44 @@ interface ReviewProps {
 const reviewList: ReviewProps[] = [
   {
     image: "/demo-img.jpg",
-    name: "Aarav Shah",
-    userName: "Founder, FinchFlow",
+    name: "Ritika Bansal",
+    userName: "E-commerce Founder",
     comment:
-      "Panda saved us weeks of setup. We launched our first paying plan in less than a sprint.",
+      "Mailvibe's onboarding and AI content assistant helped me launch my first campaign in 10 minutes—opened at 48%. The support is lightning-fast.",
     rating: 5.0,
   },
   {
     image: "/demo-img.jpg",
-    name: "Maya Patel",
-    userName: "Product Lead, OrbitDesk",
+    name: "Chris Lee",
+    userName: "Growth Marketer, SaaStrek",
     comment:
-      "The section structure and component quality made it easy to ship a polished onboarding flow quickly.",
+      "We've tried every big-name platform. Mailvibe gets our campaigns out faster and their deliverability really moved the needle for us.",
     rating: 4.8,
   },
 
   {
     image: "/demo-img.jpg",
-    name: "Nikhil Rao",
-    userName: "CTO, TeamForge",
+    name: "Priya Mehta",
+    userName: "Newsletter Creator",
     comment:
-      "We replaced our old starter with Panda and reduced front-end rework dramatically.",
+      "Switching to Mailvibe boosted my open rates and saved hours each week. The real-time analytics and segmentation are game changers.",
     rating: 4.9,
   },
   {
     image: "/demo-img.jpg",
-    name: "Emma Brooks",
-    userName: "Head of Growth, Nimbus",
+    name: "Joel Edwards",
+    userName: "Startup CEO",
     comment:
-      "The default layout is conversion-friendly and easy to adapt to our brand.",
+      "As a non-technical founder, Mailvibe just works—beautiful campaigns, zero setup struggle.",
     rating: 5.0,
   },
   {
     image: "/demo-img.jpg",
-    name: "Daniel Kim",
-    userName: "Engineering Manager, PulseOps",
+    name: "Ava Zhang",
+    userName: "SaaS Growth Coach",
     comment:
-      "Great developer ergonomics. New engineers onboarded fast and started shipping immediately.",
+      "Finally, a founder-led tool with actual support—Mailvibe feels personal, fast, and simple.",
     rating: 5.0,
-  },
-  {
-    image: "/demo-img.jpg",
-    name: "Sofia Green",
-    userName: "Founder, LaunchPad AI",
-    comment:
-      "Exactly what we needed for an MVP: clean code, strong UI, and a sensible section flow.",
-    rating: 4.9,
   },
 ];
 
@@ -85,7 +77,7 @@ export const LayoutTestimonialSection = () => {
         </h2>
 
         <h2 className="text-3xl md:text-4xl text-center font-bold mb-4">
-          Teams shipping with Panda
+          Marketers who chose Mailvibe
         </h2>
       </div>
 
@@ -117,7 +109,7 @@ export const LayoutTestimonialSection = () => {
                   <div className="flex flex-row items-center gap-4">
                     <Avatar>
                       <AvatarImage src={review.image} alt={review.name} />
-                      <AvatarFallback>SV</AvatarFallback>
+                      <AvatarFallback>MV</AvatarFallback>
                     </Avatar>
 
                     <div className="flex flex-col">
