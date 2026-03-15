@@ -10,40 +10,40 @@ interface FeaturesProps {
 
 const featureList: FeaturesProps[] = [
   {
-    icon: "TabletSmartphone",
-    title: "Responsive By Default",
+    icon: "LayoutGrid",
+    title: "Drag-and-Drop Builder",
     description:
-      "Every section is optimized for mobile and desktop without extra layout work.",
+      "Design stunning emails visually—add sections, images & CTAs with zero code.",
   },
   {
-    icon: "BadgeCheck",
-    title: "Battle-Tested Patterns",
+    icon: "Clock",
+    title: "Automated Workflows",
     description:
-      "Uses dependable UI and architecture conventions teams can maintain long-term.",
+      "Set up welcome drips, autoresponders, and scheduled campaigns to run on autopilot.",
   },
   {
-    icon: "Goal",
-    title: "Product-Focused Structure",
+    icon: "FileBarChart2",
+    title: "Live Reporting",
     description:
-      "Clear section hierarchy designed to communicate value and drive activation.",
+      "Track opens, clicks, bounces & more in beautiful dashboards. Spot trends, not just numbers.",
   },
   {
-    icon: "PictureInPicture",
-    title: "Polished Visual Foundation",
+    icon: "Users",
+    title: "Segmentation & Lists",
     description:
-      "Modern cards, spacing, and motion cues that are easy to extend for your brand.",
+      "Simple contact management, tagging, and rule-driven targeting in one place.",
   },
   {
-    icon: "MousePointerClick",
-    title: "Conversion-Ready CTA Flow",
+    icon: "Bot",
+    title: "AI Campaign Assistant",
     description:
-      "Strategic calls-to-action and section order help users move to signup quickly.",
+      "Let AI craft subject lines, test content variations, and boost your engagement rates.",
   },
   {
-    icon: "Newspaper",
-    title: "Documentation-Friendly",
+    icon: "ShieldCheck",
+    title: "Compliance Ready",
     description:
-      "Readable code and section boundaries make onboarding new contributors easier.",
+      "GDPR, CAN-SPAM & privacy by default. No data reselling or hidden catch.",
   },
 ];
 
@@ -55,12 +55,12 @@ export const LayoutFeatureGridSection = () => {
       </h2>
 
       <h2 className="text-3xl md:text-4xl text-center font-bold mb-4">
-        What you get out of the box
+        Mailvibe: Seriously Powerful, Surprisingly Simple
       </h2>
 
       <h3 className="md:w-1/2 mx-auto text-xl text-center text-muted-foreground mb-8">
-        Panda combines developer speed and production-grade UX so you can spend
-        your time shipping features instead of rebuilding starter infrastructure.
+        Built from the ground up to remove friction—for marketers, founders,
+        and anyone building an audience with email.
       </h3>
 
       <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4">
