@@ -13,30 +13,30 @@ interface FAQProps {
 
 const FAQList: FAQProps[] = [
   {
-    question: "Is Panda free to start with?",
-    answer: "Yes. You can start with the core template and customize it for your product.",
+    question: "Can I try Mailvibe for free?",
+    answer: "Absolutely! The Starter plan gives you all core features and no credit card is required.",
     value: "item-1",
   },
   {
-    question: "Can I use this for a production SaaS app?",
+    question: "How is Mailvibe different from older email tools?",
     answer:
-      "Yes. The starter is designed for production-minded teams with scalable structure and reusable UI patterns.",
+      "Mailvibe focuses on simplicity, speed, and deliverability—providing a powerful, modern experience, AI content assistance, and direct founder support.",
     value: "item-2",
   },
   {
-    question: "Does it support dark mode and responsive design?",
+    question: "Will my emails actually reach inboxes?",
     answer:
-      "Yes. The template includes theme support and responsive layouts across major sections.",
+      "Yes. Mailvibe is built atop proven infrastructure partners and follows strict deliverability practices to maximize inbox placement.",
     value: "item-3",
   },
   {
-    question: "Can I plug in my own auth and billing provider?",
-    answer: "Yes. The structure is provider-agnostic and easy to adapt for your stack.",
+    question: "Can I use my own sending domain?",
+    answer: "Yes! You can authenticate your sending domain or use Mailvibe's trusted pools for instant sending.",
     value: "item-4",
   },
   {
-    question: "How quickly can I launch with Panda?",
-    answer: "Most teams can ship an MVP in days by reusing existing sections and starter patterns.",
+    question: "What happens if I need help?",
+    answer: "You get fast, direct access to the founder. No support tickets or giant queues.",
     value: "item-5",
   },
 ];
