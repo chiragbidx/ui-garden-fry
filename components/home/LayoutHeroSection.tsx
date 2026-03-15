@@ -11,24 +11,24 @@ export const LayoutHeroSection = () => {
         <div className="text-center space-y-8">
           <Badge variant="outline" className="text-sm py-2">
             <span className="mr-2 text-primary">
-              <Badge>Email Marketing SaaS</Badge>
+              <Badge>Mailvibe</Badge>
             </span>
-            <span>Meet Mailvibe — effortless campaigns, powerful growth</span>
+            <span>Modern email marketing you'll love</span>
           </Badge>
 
           <div className="max-w-screen-md mx-auto text-center text-4xl md:text-6xl font-bold">
             <h1>
-              Turbocharge your
+              Launch, analyze, and grow with
               <span className="text-transparent px-2 bg-gradient-to-r from-[#D247BF] to-primary bg-clip-text">
-                email marketing
+                effortless emails
               </span>
-              today
             </h1>
           </div>
 
           <p className="max-w-screen-sm mx-auto text-xl text-muted-foreground">
-            Mailvibe makes launching winning campaigns, managing subscribers, and
-            tracking results easier than ever. Powerfully simple, delightfully effective.
+            Create stunning campaigns, easily manage your audience, and
+            see results in real time. Start your Free Trial and unlock higher
+            engagement with less effort—Mailvibe is your powerful but simple platform.
           </p>
 
           <div className="space-y-4 md:space-y-0 md:space-x-4 flex flex-col md:flex-row justify-center">
